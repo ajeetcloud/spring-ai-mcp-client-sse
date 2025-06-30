@@ -18,7 +18,7 @@ public class BasicController {
     public BasicController(ChatClient.Builder chatClientBuilder, ToolCallbackProvider tools) {
 
         this.chatClient = chatClientBuilder
-                .defaultSystem("Please prioritise context information for answering questions")
+                .defaultSystem("Please prioritise context information for answering questions. Give short, concise and to the point answers.")
                 .defaultToolCallbacks(tools)
                 .build();
     }
